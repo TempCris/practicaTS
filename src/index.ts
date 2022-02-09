@@ -1,18 +1,32 @@
-/* eslint-disable no-return-assign */
-
-// Source: https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true
-
-function simpleArraySum(ar: Array<number>): number {
-  let suma = 0;
-  ar.forEach((element) => suma += element);
-  return suma;
+import Busqueda from "./funciones/busqueda";
+import upgrade from "./funciones/añadir";
+import ImpDatos from "./funciones/impresion"
+import { anime1 } from "./dataAnimes/Animes";
+//import deleteLast from "./funciones/deleteLastPlace";
+import deleteFirst from "./funciones/deleteFirstPlace";
+export interface serie {
+  nombre: string 
+  numCap: number
+  genero: string
+  autor: string
+  ova: boolean 
 }
 
-function main() {
+export function newDato (datoNuevo:Array<serie>){
+  newList = datoNuevo;
+}
+
+let serie:serie[];
+
+let newList:Array<serie> = [];
+
+function main() { 
   console.log('---------- Cool Programing ----------\n');
-  const testArray = [1, 2, 3, 4, 10, 11];
-  const result = simpleArraySum(testArray);
-  console.log('Result: ', result);
+  ImpDatos(anime7);
+  ImpDatos(anime8);
+  ImpDatos(anime9);
+  upgrade(anime1, newList);
+  deleteFirst(serie);
+  Busqueda(anime1,12);
 }
-
 main();
